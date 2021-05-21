@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheeet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
         $.when( $.ready ).then(function() {
-            $(this).click().hide();
+            $('.ninja').click(function(){
+                $(this).hide();
+            })
+            $('#btn').click(function(){
+                    $('.ninja').show();
+            })
         });
     </script>
     <title>Ninja Desaparece</title>
@@ -27,6 +32,8 @@
             <img class="ninja" id="ninja7" src="media/ninja.jpg" alt="Ninja!">
             <img class="ninja" id="ninja8" src="media/ninja.jpg" alt="Ninja!">
         </div>
+        <button id="btn">Restaurar</button>
     </div>
+    
 </body>
 </html>

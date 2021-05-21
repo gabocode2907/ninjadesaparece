@@ -1,7 +1,13 @@
+
 .container {
-    margin: 0 auto;
+    height: 500px;
+    width: 900px;
+    margin: 0px auto;
 }
-    /* .container .ninja{
-        height: 50px;
-        width: auto;
-    } */ 
+
+    .container .ninja{
+        height: 200px;
+        width: 200px;
+        border: solid black;
+        display: inline-block;
+    }
